@@ -55,41 +55,43 @@ class App extends Component {
     return (
       <React.Fragment>
         <ToastContainer />
-        <button className="btn btn-primary" onClick={this.handleAdd}>
-          Add
-        </button>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Update</th>
-              <th>Delete</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.state.posts.map(post => (
-              <tr key={post.id}>
-                <td>{post.title}</td>
-                <td>
-                  <button
-                    className="btn btn-info btn-sm"
-                    onClick={() => this.handleUpdate(post)}
-                  >
-                    Update
-                  </button>
-                </td>
-                <td>
-                  <button
-                    className="btn btn-danger btn-sm"
-                    onClick={() => this.handleDelete(post)}
-                  >
-                    Delete
-                  </button>
-                </td>
+        <div className="container">
+          <button className="btn btn-primary" onClick={this.handleAdd}>
+            Add
+          </button>
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Update</th>
+                <th>Delete</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {this.state.posts.map(post => (
+                <tr key={post.id}>
+                  <td>{post.title}</td>
+                  <td>
+                    <button
+                      className="btn btn-info btn-sm"
+                      onClick={() => this.handleUpdate(post)}
+                    >
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <button
+                      className="btn btn-danger btn-sm"
+                      onClick={() => this.handleDelete(post)}
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </React.Fragment>
     );
   }
