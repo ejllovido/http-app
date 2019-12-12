@@ -3,7 +3,6 @@ import { ToastContainer } from "react-toastify";
 import http from "./services/httpServices";
 import config from "./config.json";
 import "react-toastify/dist/ReactToastify.css";
-import "./App.css";
 
 const apiEndpoint = "https://jsonplaceholder.typicode.com/posts";
 
