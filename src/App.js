@@ -56,7 +56,10 @@ class App extends Component {
       <React.Fragment>
         <ToastContainer />
         <div className="container">
-          <button className="btn btn-primary" onClick={this.handleAdd}>
+          <button
+            className="btn btn-primary button-add"
+            onClick={this.handleAdd}
+          >
             Add
           </button>
           <table className="table">

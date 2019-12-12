@@ -7,4 +7,25 @@ body {
 
 .container {
   background: white;
+  padding: 40px;
+  box-shadow: 0px 0px 10px rgb(74, 80, 86, 0.2);
+}
+
+.button-add {
+  margin-bottom: 16px;
+}
+
+.btn-primary {
+  background: #14919b !important;
+  border-color: #14919b !important;
+}
+
+.btn-info {
+  background: #2cb1bc !important;
+  border-color: #2cb1bc !important;
+}
+
+.btn-danger {
+  background: #d64545 !important;
+  border-color: #d64545 !important;
 }
